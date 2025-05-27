@@ -22,6 +22,7 @@ public class music {
     private String producer;
     private String company;
     private String album;
+    private String lyric_data;
     private int duration;
     private String file_path;
     private int uploader_id;

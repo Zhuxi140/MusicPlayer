@@ -30,6 +30,13 @@
     </properties>
     <dependencies>
 
+        <!--pojo模块-->
+        <dependency>
+            <groupId>com.zhuxi</groupId>
+            <artifactId>pojo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!--Bcrypt-->
         <dependency>
             <groupId>org.mindrot</groupId>
@@ -43,14 +50,22 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--Jackson-->
+
+
+        <!--mybatis-->
         <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>3.0.4</version>
         </dependency>
+
+
+
+        <!--druid-->
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.2.22</version>
         </dependency>
 
 
