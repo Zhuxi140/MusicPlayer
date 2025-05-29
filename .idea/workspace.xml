@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90c97c7a-83b4-4da8-a814-b0413ff3da74" name="更改" comment="feat(entity): 添加音乐、播放历史、角色和用户实体类&#10;&#10;- 新增 music、playHistory、role 和 users 实体类&#10;- 更新 parent、pojo 和 server 模块的 pom 文件&#10;- 添加数据库和 web 相关依赖&#10;- 调整项目结构，统一使用 com.zhuxi 作为 groupId">
-      <change beforePath="$PROJECT_DIR$/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/music.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/music.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/playHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/PlayHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/userLoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/exception/userException/userLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/usersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/usersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/usersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/usersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/usersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/usersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/BcryptProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/Properties/BcryptProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/BcryptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/BcryptUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/Properties/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/Properties/JwtProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/generator/domain/Music.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/usersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/mapper/usersMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +72,32 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IDEA/medical-management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ServerApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/IDEA/MusicPlayer1/server/src/main/java/com/zhuxi/controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zhuxi" />
@@ -97,21 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ParentApplication">
-    <configuration name="ParentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="parent" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhuxi.parent.ParentApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PojoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="pojo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhuxi.pojo.PojoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhuxi.ServerApplication" />
@@ -142,6 +141,7 @@
       <workItem from="1748341317992" duration="1667000" />
       <workItem from="1748342996416" duration="1107000" />
       <workItem from="1748344109123" duration="1225000" />
+      <workItem from="1748529359912" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 parent、pojo 和 server 模块&#10;&#10;- 新增 parent 模块作为项目父级依赖管理&#10;- 创建 pojo模块用于定义数据对象&#10;- 实现 server 模块作为服务端应用&#10;- 添加 ServerApplication启动类和基础测试类">
       <option name="closed" value="true" />

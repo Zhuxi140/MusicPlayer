@@ -8,9 +8,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class playHistory {
+public class Users {
     private int id;
-    private int user_id;
-    private int music_id;
-    private int play_time;
+    private String username;
+    private String password;
+    private String avatar;
+    private role role;
+
 }

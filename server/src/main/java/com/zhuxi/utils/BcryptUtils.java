@@ -1,16 +1,17 @@
 package com.zhuxi.utils;
 
 
+import com.zhuxi.utils.Properties.BcryptProperties;
 import org.mindrot.jbcrypt.BCrypt;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 @Component
 public class BcryptUtils {
 
     private final BcryptProperties bcryptProperties;
 
-    @Autowired
+
     public BcryptUtils(BcryptProperties bcryptProperties) {
         this.bcryptProperties = bcryptProperties;
     }

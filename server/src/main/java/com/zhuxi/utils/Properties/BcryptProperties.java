@@ -1,11 +1,10 @@
-package com.zhuxi.utils;
+package com.zhuxi.utils.Properties;
 
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
-@Component
+
 @ConfigurationProperties(prefix = "bcrypt")
 @Data
 public class BcryptProperties {

@@ -1,11 +1,24 @@
 package com.zhuxi.service;
 
 
-import com.zhuxi.entity.users;
-import org.springframework.stereotype.Service;
+import com.zhuxi.DTO.UsersDTO;
+import com.zhuxi.VO.UsersVO;
 
 public interface usersService {
-    void login(String username, String password);
 
+    //登录
+    UsersVO login(UsersDTO usersDTO);
+
+    //删除用户
     void deleteUser(int id);
+
+    //增加用户
+    void  addUser(UsersDTO usersDTO);
+
+    //查询用户信息
+    UsersVO selectUserById(int id);
+
+    //修改用户信息
+    void updateUser(UsersVO user);
+
 }
