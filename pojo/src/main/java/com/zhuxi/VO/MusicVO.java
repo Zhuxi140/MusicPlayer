@@ -1,10 +1,10 @@
-package com.zhuxi.DTO;
-
+package com.zhuxi.VO;
 
 import lombok.Data;
 
 @Data
-public class MusicDTO {
+public class MusicVO {
+
     private int id;
     private String title;
     private String singer;
@@ -14,10 +14,5 @@ public class MusicDTO {
     private String album;
     private String lyric_data;
     private float duration;
-    private String file_path;
-    private int uploader_id;
-    private int bitrate;
-    private String codeType; // 编码格式
-    private String format; // 文件格式
 
 }

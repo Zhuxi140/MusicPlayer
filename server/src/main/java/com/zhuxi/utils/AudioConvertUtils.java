@@ -4,7 +4,6 @@ package com.zhuxi.utils;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-public class FfmpegUtils {
-
+public class AudioConvertUtils {
 
 }
