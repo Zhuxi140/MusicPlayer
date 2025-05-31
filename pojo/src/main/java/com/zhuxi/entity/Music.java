@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Music {
 
-    private int id;
+    private long id;
     private String title; // 标题
     private String singer; // 歌手
     private String lyric; //   作词

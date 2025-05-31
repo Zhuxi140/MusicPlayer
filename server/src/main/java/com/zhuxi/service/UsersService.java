@@ -4,7 +4,7 @@ package com.zhuxi.service;
 import com.zhuxi.DTO.UsersDTO;
 import com.zhuxi.VO.UsersVO;
 
-public interface usersService {
+public interface UsersService {
 
     //登录
     UsersVO login(UsersDTO usersDTO);

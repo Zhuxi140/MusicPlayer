@@ -4,14 +4,14 @@ package com.zhuxi.controller;
 import com.zhuxi.DTO.UsersDTO;
 import com.zhuxi.VO.UsersVO;
 import com.zhuxi.result.Result;
-import com.zhuxi.service.usersService;
+import com.zhuxi.service.UsersService;
 import com.zhuxi.utils.JwtUtils;
 import io.jsonwebtoken.Claims;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import com.zhuxi.service.musicService;
+import com.zhuxi.service.MusicService;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,9 +28,9 @@ import java.util.Map;
 @Log4j2
 public class AdminController {
 
-    private final usersService usersService;
+    private final UsersService usersService;
     private final JwtUtils jwtUtils;
-    private final musicService musicService;
+    private final MusicService musicService;
 
     @Value("${spring.servlet.multipart.location}")
     private String filePath;
@@ -38,7 +38,7 @@ public class AdminController {
     @Value("${spring.servlet.multipart.max-file-size}")
     private String maxFiles;
 
-    public AdminController(usersService usersService, JwtUtils jwtUtils, musicService musicService) {
+    public AdminController(UsersService usersService, JwtUtils jwtUtils, MusicService musicService) {
         this.usersService = usersService;
         this.jwtUtils = jwtUtils;
         this.musicService = musicService;

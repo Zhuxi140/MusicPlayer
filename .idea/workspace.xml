@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90c97c7a-83b4-4da8-a814-b0413ff3da74" name="更改" comment="feat(user): 实现用户注册、登录和信息管理功能&#10;&#10;- 新增用户注册、登录接口和相关服务&#10;- 实现用户信息查询、修改和删除功能&#10;- 添加 JWT 认证和权限控制- 优化数据库操作和异常处理">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/AudioDateUtils.java" afterDir="false" />
+    <list default="true" id="90c97c7a-83b4-4da8-a814-b0413ff3da74" name="更改" comment="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15de0df6-0735-4bab-a153-f9c36eb9edf2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/15de0df6-0735-4bab-a153-f9c36eb9edf2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/DTO/MusicDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/DTO/MusicDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/VO/MusicVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/VO/MusicVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/MusicDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/MusicDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/entity/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/entity/Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/FfmpegUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/com/zhuxi/server/ServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/com/zhuxi/server/ServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/Inpterceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/Inpterceptor/TokenInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/UserLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/musicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/musicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/musicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/usersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/musicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/usersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/AudioDateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/AudioDateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/musicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/mapper/musicMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/utils/FfmpegUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/UserLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/usersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/usersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/usersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/usersService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +40,9 @@
       <list>
         <option value="Enum" />
         <option value="Exception" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="Mybatis Mapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,37 +82,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ServerApplicationTests.contextLoads.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ServerApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/IDEA/Mybatis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15527344",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ServerApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IDEA/Mybatis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA\MusicPlayer1\server\src\main\java\com\zhuxi\controller" />
@@ -174,7 +182,8 @@
       <workItem from="1748344109123" duration="1225000" />
       <workItem from="1748529359912" duration="934000" />
       <workItem from="1748566264254" duration="2518000" />
-      <workItem from="1748569784278" duration="18159000" />
+      <workItem from="1748569784278" duration="26921000" />
+      <workItem from="1748655726339" duration="6792000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 parent、pojo 和 server 模块&#10;&#10;- 新增 parent 模块作为项目父级依赖管理&#10;- 创建 pojo模块用于定义数据对象&#10;- 实现 server 模块作为服务端应用&#10;- 添加 ServerApplication启动类和基础测试类">
       <option name="closed" value="true" />
@@ -200,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748530053205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制">
+      <option name="closed" value="true" />
+      <created>1748597224966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748597224966</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +227,7 @@
     <MESSAGE value="feat: 初始化 parent、pojo 和 server 模块&#10;&#10;- 新增 parent 模块作为项目父级依赖管理&#10;- 创建 pojo模块用于定义数据对象&#10;- 实现 server 模块作为服务端应用&#10;- 添加 ServerApplication启动类和基础测试类" />
     <MESSAGE value="feat(entity): 添加音乐、播放历史、角色和用户实体类&#10;&#10;- 新增 music、playHistory、role 和 users 实体类&#10;- 更新 parent、pojo 和 server 模块的 pom 文件&#10;- 添加数据库和 web 相关依赖&#10;- 调整项目结构，统一使用 com.zhuxi 作为 groupId" />
     <MESSAGE value="feat(user): 实现用户注册、登录和信息管理功能&#10;&#10;- 新增用户注册、登录接口和相关服务&#10;- 实现用户信息查询、修改和删除功能&#10;- 添加 JWT 认证和权限控制- 优化数据库操作和异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(user): 实现用户注册、登录和信息管理功能&#10;&#10;- 新增用户注册、登录接口和相关服务&#10;- 实现用户信息查询、修改和删除功能&#10;- 添加 JWT 认证和权限控制- 优化数据库操作和异常处理" />
+    <MESSAGE value="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class MusicVO {
 
-    private int id;
+    private long id;
     private String title;
     private String singer;
     private String lyric;

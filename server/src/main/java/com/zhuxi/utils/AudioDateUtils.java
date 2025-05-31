@@ -35,7 +35,7 @@ public class AudioDateUtils {
             // 获取文件格式并存储
             Format(grabber, meta);
 
-            meta.setFile_path(filePath);
+            meta.setFilePath(filePath);
 
             return meta;
         }catch (FFmpegFrameGrabber.Exception e)

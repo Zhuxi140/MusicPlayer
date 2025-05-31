@@ -6,7 +6,7 @@ import com.zhuxi.entity.Users;
 import com.zhuxi.exception.userException.UserException;
 import com.zhuxi.exception.userException.UsersErrorCode;
 import com.zhuxi.mapper.usersMapper;
-import com.zhuxi.service.usersService;
+import com.zhuxi.service.UsersService;
 import com.zhuxi.utils.BcryptUtils;
 import com.zhuxi.utils.JwtUtils;
 import lombok.extern.log4j.Log4j2;
@@ -22,13 +22,13 @@ import java.util.Map;
 
 @Service
 @Log4j2
-public class usersServiceImpl implements usersService {
+public class UsersServiceImpl implements UsersService {
 
     private final BcryptUtils  bcryptUtils;
     private final usersMapper userMapper;
     private final JwtUtils jwtUtils;
 
-    public usersServiceImpl(BcryptUtils bcryptUtils,  usersMapper userMapper,JwtUtils jwtUtils) {
+    public UsersServiceImpl(BcryptUtils bcryptUtils, usersMapper userMapper, JwtUtils jwtUtils) {
         this.bcryptUtils = bcryptUtils;
         this.userMapper = userMapper;
         this.jwtUtils = jwtUtils;

@@ -5,7 +5,7 @@ import com.zhuxi.DTO.UsersDTO;
 import com.zhuxi.VO.UsersVO;
 import com.zhuxi.mapper.usersMapper;
 import com.zhuxi.result.Result;
-import com.zhuxi.service.usersService;
+import com.zhuxi.service.UsersService;
 import com.zhuxi.utils.JwtUtils;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.log4j.Log4j2;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.*;
 @Log4j2
 public class UserLoginController {
 
-    private final usersService usersService;
+    private final UsersService usersService;
 
-    public UserLoginController(usersService usersService, JwtUtils jwtUtils, usersMapper usersMapper) {
+    public UserLoginController(UsersService usersService, JwtUtils jwtUtils, usersMapper usersMapper) {
         this.usersService = usersService;
     }
 
