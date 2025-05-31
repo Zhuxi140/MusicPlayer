@@ -12,10 +12,15 @@ public interface MusicService {
     // 删除音频文件
     void deleteMusic(int id);
 
-    //  分页查询音乐列表
+    //  分页查询全部音乐列表
     PageResult<MusicDTO> getMusicListAfterId(Long lastId, int pageSize);
 
 
+    // 查询个人喜欢/收藏歌曲列表
+    PageResult<MusicDTO> getMusicListByUserId(Long lastId, int pageSize, int userId);
+
+    // 收藏音乐
+    int addFavoriteMusic(int musicId, int userId);
 
     // 传输音乐
 }

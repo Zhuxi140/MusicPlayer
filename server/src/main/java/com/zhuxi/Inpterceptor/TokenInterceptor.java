@@ -25,21 +25,22 @@ public class TokenInterceptor implements HandlerInterceptor {
     }
 
 
-
+    /**
+     * Token拦截器
+     * @param request 请求
+     * @param response 响应
+     * @param handler 处理器
+     * @return 是否放行
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         String requestURI = request.getRequestURI();
         log.info("TokenInterceptor处理url:{}", requestURI);
 
         ArrayList<String> headerNames = Collections.list(request.getHeaderNames());
-        if(headerNames != null){
-            for (String headerName : headerNames) {
-                log.info("headerName:");
-                log.info("{} = {}", headerName, request.getHeader(headerName));
-            }
-        }else {
-            log.info("headerNames is null");
-        }
+ /*       for (String headerName : headerNames) {
+            log.info("headerName: {} = {}", headerName, request.getHeader(headerName));
+        }*/
 
         //放行登录请求或其他请求
         ArrayList<String> excludePath = tokenInterceptorProperties.getLoginExcludePath();
@@ -52,9 +53,10 @@ public class TokenInterceptor implements HandlerInterceptor {
         String authorization = request.getHeader("Authorization");
         if(authorization != null && authorization.startsWith("Bearer ") ){
                 String token = authorization.substring(7);
-                if(jwtUtils.validateToken(token)){
-                    log.info("token验证成功");
+                if(!jwtUtils.validateToken(token)){
+                    log.info("token验证失败");
                 }
+                log.info("token验证成功");
         }else{
             log.warn("请求未携带token");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED); //  401

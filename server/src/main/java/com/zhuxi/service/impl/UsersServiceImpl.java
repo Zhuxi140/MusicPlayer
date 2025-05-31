@@ -12,12 +12,13 @@ import com.zhuxi.utils.JwtUtils;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author zhuxi
- * @Description TODO
  */
 
 @Service
@@ -36,7 +37,7 @@ public class UsersServiceImpl implements UsersService {
 
 
     /**
-     *
+     * 用户登录
      * @param usersDTO d
      * @return UsersVO
      */
@@ -68,9 +69,10 @@ public class UsersServiceImpl implements UsersService {
 
     /**
      * 删除用户
-     * @param id
+     * @param id  (token中获取)
      */
     @Override
+    @Transactional
     public void deleteUser(int id) {
         if(userMapper.selectUserById(id) != null){
             userMapper.deleteUserById(id);
@@ -79,9 +81,10 @@ public class UsersServiceImpl implements UsersService {
 
     /**
      * 添加用户
-     * @param userDTO
+     * @param userDTO d
      */
     @Override
+    @Transactional
     public void addUser(UsersDTO userDTO) {
         checkUser(userDTO);
         if(userMapper.selectUserByName(userDTO.getUsername()) !=  null)
@@ -96,8 +99,8 @@ public class UsersServiceImpl implements UsersService {
 
     /**
      * 根据id查询用户信息
-     * @param id(token中获取)
-     * @return
+     * @param id (token中获取)
+     * @return Vo
      */
     @Override
     public UsersVO selectUserById(int id) {
@@ -108,7 +111,12 @@ public class UsersServiceImpl implements UsersService {
         return users;
     }
 
+    /**
+     * 修改用户信息
+     * @param user VO
+     */
     @Override
+    @Transactional
     public void updateUser(UsersVO user) {
         checkUser(user);
         if(userMapper.selectUserByName(user.getUsername()) != null && userMapper.selectUserByName(user.getUsername()).getId() != user.getId())

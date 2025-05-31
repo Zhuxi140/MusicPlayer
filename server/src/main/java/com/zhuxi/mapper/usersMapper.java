@@ -25,9 +25,7 @@ public interface usersMapper {
     @Insert("INSERT INTO users(username, password, role) VALUE (#{username},#{password},#{role})")
     void addUser(UsersDTO usersDTO);
 
-    //登录
-/*    @Select("SELECT id,username,password,role FROM users WHERE username=#{username}")
-    UsersVO loginByNameAndPassword(UsersDTO usersDTO);*/
+
 
     @Select("SELECT id,username,password,role FROM users WHERE username=#{username}")
     Users selectUserByName(String username);

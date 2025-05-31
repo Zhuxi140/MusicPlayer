@@ -6,29 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="90c97c7a-83b4-4da8-a814-b0413ff3da74" name="更改" comment="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15de0df6-0735-4bab-a153-f9c36eb9edf2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/15de0df6-0735-4bab-a153-f9c36eb9edf2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/DTO/MusicDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/DTO/MusicDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/VO/MusicVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/VO/MusicVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhuxi/entity/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/MusicDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/MusicDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/entity/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/entity/Music.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/zhuxi/DTO/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/Inpterceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/Inpterceptor/TokenInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/MusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/controller/UserLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/musicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/musicMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/musicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/MusicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/usersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/UsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/musicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/usersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/AudioDateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/utils/AudioDateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/usersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/mapper/usersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/zhuxi/service/impl/UsersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/musicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/mapper/musicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/Inpterceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/Inpterceptor/TokenInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/MusicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/usersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/usersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/usersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/usersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/mapper/musicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/mapper/musicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/MusicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/MusicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/MusicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/zhuxi/service/impl/MusicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/musicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/mapper/musicMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +179,7 @@
       <workItem from="1748529359912" duration="934000" />
       <workItem from="1748566264254" duration="2518000" />
       <workItem from="1748569784278" duration="26921000" />
-      <workItem from="1748655726339" duration="6792000" />
+      <workItem from="1748655726339" duration="23639000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 parent、pojo 和 server 模块&#10;&#10;- 新增 parent 模块作为项目父级依赖管理&#10;- 创建 pojo模块用于定义数据对象&#10;- 实现 server 模块作为服务端应用&#10;- 添加 ServerApplication启动类和基础测试类">
       <option name="closed" value="true" />
@@ -217,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748597224966</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(server): 添加音乐上传功能并优化相关配置&#10;&#10;- 新增音乐上传接口和相关服务&#10;- 更新数据库模型以支持音乐信息存储- 添加音频信息提取工具类- 优化多部分请求配置，增加最大请求大小限制">
+      <option name="closed" value="true" />
+      <created>1748666946239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748666946239</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -46,6 +46,49 @@
         LIMIT #{pageSize}
     </select>
 
+    <select id="selectMusicListByUser" resultMap="musicDTOMap">
+        SELECT music.id,
+               title,
+               singer,
+               lyric,
+               composition,
+               company,
+               album,
+               lyric_data,
+               duration,
+               file_path,
+               uploader_id,
+               bitrate,
+               code_type,
+               format
+        FROM music
+        JOIN favorite ON music.id = favorite.music_id
+        WHERE favorite.user_id = #{userId}
+          AND music.id > #{lastId}
+        ORDER BY music.id DESC, favorite.created_at DESC
+        LIMIT #{pageSize}
+    </select>
+
+
+    <insert id="addFavoriteMusic">
+        INSERT INTO favorite(music_id, user_id)
+        VALUES(#{musicId}, #{userId})
+    </insert>
+
+
+    <select id="selectMusicIsFavorite" resultType="boolean">
+        SELECT COUNT(*) > 0
+        FROM favorite
+        WHERE music_id = #{musicId}
+          AND user_id = #{userId}
+    </select>
+
+    <delete id="deleteFavoriteMusic">
+        DELETE FROM favorite
+        WHERE music_id = #{musicId}
+          AND user_id = #{userId}
+    </delete>
+
 
     
 </mapper>
